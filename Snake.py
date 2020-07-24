@@ -128,6 +128,8 @@ def pause():
                 elif e.key == pyg.K_ESCAPE:
                     run = False
                     paused = False
+                    pyg.quit()
+                    sys.exit()
         draw()
         win.blit(transparent, (0, 0))
         create_text("PAUSED", "Courier", 48, white, 50)
